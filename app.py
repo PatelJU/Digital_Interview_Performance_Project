@@ -11,10 +11,16 @@ from io import BytesIO
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Digital Interview Performance AI", page_icon="🤖", layout="wide")
 
-# --- CUSTOM CSS (Dark Blue Theme) ---
+# --- FORCE DARK MODE ONLY (Hide theme selector) ---
 st.markdown(
     """
     <style>
+    /* Hide the theme menu button completely */
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    
+    /* Force dark mode colors for all elements */
     .main {
         background-color: #0a192f !important;
     }
@@ -76,13 +82,24 @@ st.markdown(
     .stApp {
         background-color: #0a192f;
     }
-    /* Text colors for dark theme */
+    /* Text colors for dark theme - force always */
     h1, h2, h3, h4, h5, h6, p, span, div {
         color: #e6f1ff !important;
     }
     /* Fix for headings */
     .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
         color: #00d9ff !important;
+    }
+    /* Force dark mode inputs and widgets */
+    .stTextInput > div > div > input,
+    .stNumberInput > div > div > input,
+    .stSelectbox > div > div > select {
+        background-color: #112d4e !important;
+        color: #e6f1ff !important;
+    }
+    .stDataFrame {
+        background-color: #0a192f !important;
+        color: #e6f1ff !important;
     }
     </style>
     """,
