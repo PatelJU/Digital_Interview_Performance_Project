@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+plotly
+scikit-learn
+ydata-profiling
+nbformat
+matplotlib
+seaborn
+pickle5; python_version < '3.8'
