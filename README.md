@@ -17,6 +17,7 @@ This project evaluates candidate performance in digital interviews using machine
 - **🧠 Psychological Insights**: Monitors stress levels and response times for optimal performance indicators
 - **📈 Performance Scoring**: Generates composite scores combining all behavioral and communication factors
 - **💼 Multi-Role Support**: Covers 8+ job roles including Software Engineer, Data Scientist, Marketing Analyst, etc.
+- **🚀 BULK CANDIDATE SCAN**: Process hundreds of candidates simultaneously via CSV upload with instant predictions and analytics
 
 ## 🚀 Quick Start
 
@@ -52,6 +53,8 @@ Digital-Interview-Performance-AI/
 ├── app.py                          # Main Streamlit application
 ├── requirements.txt                # Python dependencies
 ├── README.md                       # Project documentation
+├── BULK_SCAN_GUIDE.md             # Bulk scan feature user guide
+├── test_bulk_candidates.csv       # Sample test data for bulk scan
 ├── data/
 │   └── interview_performance_data.csv   # Dataset (7,501 records)
 ├── models/
@@ -81,7 +84,14 @@ Digital-Interview-Performance-AI/
 - View candidate strength profiles via radar charts
 - Receive personalized feedback and improvement areas
 
-### 4. **Download Reports**
+### 4. **Bulk Candidate Scan** ⭐ NEW!
+- Upload CSV files with hundreds of candidates
+- Process all candidates simultaneously
+- Get batch predictions with rankings
+- Download comprehensive results and analytics
+- Generate summary statistics for reporting
+
+### 5. **Download Reports**
 - Download complete dataset (CSV format)
 - Generate comprehensive HTML analysis reports
 - Access statistical summaries and visualizations
